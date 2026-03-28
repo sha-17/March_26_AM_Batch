@@ -4,4 +4,5 @@ test("login", async ({page}) => {
 
   await page.goto("https://testautomationpractice.blogspot.com/")
   await page.click("#HTML9 > div.widget-content > button")
+  await page.locator("#demo").waitFor()
 });
